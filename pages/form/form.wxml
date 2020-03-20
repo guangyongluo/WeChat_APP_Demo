@@ -1,0 +1,101 @@
+<!--pages/form/form.wxml-->
+<!-- <radio-group>
+  <radio value='男' checked='true'>男</radio>
+  <radio value='女'>女</radio>
+</radio-group>
+
+<radio-group bindchange="radioChange">
+  <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+    <text>{{item.value}}</text>
+  </radio>
+</radio-group>
+
+<checkbox-group>
+  <checkbox value="中国">中国</checkbox>
+  <checkbox value="美国">美国</checkbox>
+  <checkbox value="德国">德国</checkbox>
+  <checkbox value="英国">中国</checkbox>
+  <checkbox value="法国">中国</checkbox>
+</checkbox-group>
+
+<switch checked="true"></switch>
+
+<checkbox-group>
+  <label wx:for="{{state}}" wx:key="state">
+  <checkbox value="item.value" checked="{{item.checked}}">{{item.name}}</checkbox>
+  </label>
+</checkbox-group>
+
+<button id="btn" hidden="true" bindtap="myButton">按钮</button>
+
+<label for="btn">
+  <text>绑定指定ID激活，触发事件</text>
+</label>
+
+-->
+<!-- <input type="text"></input>
+<input type="number" value="110" disabled="true"></input>
+
+<input type="text" placeholder="请输入关键字" confirm-type='done'></input>
+
+<input type="number" placeholder="请输入数组" confirm-type="go"></input>
+
+<button type="primary" size="default">按钮</button>  -->
+
+<!-- <form>
+<button form-type='submit'>提交</button>
+<button form-type='reset'>重置</button>
+</form> -->
+
+<!-- <textarea value="" placeholder="请输入您的建议" placeholder-style="color: blue" placeholder-class="a"  disabled="">
+
+</textarea> -->
+
+<slider show-value="true" min="20" max="80" step="2" backgroundColor="#ff6600" selected-color="#0066ff" block-size="20" block-color="#66ff00"></slider>
+
+<picker mode="selector" range="{{list}}" value="{{index}}" bindchange="change">
+  <view>当前选中:{{list[index]}}</view>
+</picker>
+
+<picker mode="selector" range="{{objs}}" range-key="name" value="{{index}}" bindchange="change">
+  <view>当前选中:{{objs[index].name}}</view>
+</picker>
+
+<picker mode="multiSelector" range="{{multiList}}" value="{{multiIndex}}" bindchange="multiChange" bindcolumnchange="columnChange">
+  <view>当前选中:{{multiList[0][multiIndex[0]]}},
+                {{multiList[1][multiIndex[1]]}},
+                {{multiList[2][multiIndex[2]]}}</view>
+</picker>
+
+<picker mode="multiSelector" range="{{multiObjs}}" range-key="name" value="{{multiIndex}}" bindchange="multiChange" bindcolumnchange="columnChange">
+  <view>当前选中:{{multiObjs[0][multiIndex[0]].name}},
+                {{multiObjs[1][multiIndex[1]].name}},
+                {{multiObjs[2][multiIndex[2]].name}}</view>
+</picker>
+
+<picker mode="time" value="{{selectTime}}" start="{{startTime}}" end="{{endTime}}" bindchange="changeTime">
+  <view>选择时间: {{selectTime}}</view>
+</picker>
+
+<picker mode="date" value="{{selectDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="changeDate">
+  <view>选择时间: {{selectDate}}</view>
+</picker>
+
+<picker mode="region" value="{{region}}" customItem="{{customItem}}" bindchange="changeRegion">
+  <view>选择省市区: {{region}}</view>
+</picker>
+
+<view>
+  <view>{{year}}年{{month}}月{{day}}日</view>
+  <picker-view value="{{value}}" style="height: 400rpx; width: 100%;" bindchange="changeView">
+    <picker-view-column>
+      <view wx:for='{{years}}' wx:key="years">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for='{{months}}' wx:key="months">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for='{{days}}' wx:key="days">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+</view>

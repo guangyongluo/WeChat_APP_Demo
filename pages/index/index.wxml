@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto" bindtap='myClick'>点击我，计算为{{count}}</text>
+  </view>
+
+  <view wx:if="{{flag}}">true</view>
+  <view wx:if="{{length > 5}}">大于5</view>
+  <view wx:elif="{{length > 2}}">大于2</view>
+  <view wx:else>发生数值错误</view>
+
+  <block wx:if="{{flag}}">
+    <view>第一组</view>
+    <view>第二组</view>
+  </block> -->
+
+  <!-- <view wx:for="{{users}}">
+    <text>{{index + 1}}--{{item.name}}---{{item.age}}</text>
+  </view> -->
+  <!-- <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:key="i" wx:for-item="i">
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:key="j" wx:for-item="j">
+      <block wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{i * j}}
+      </block>
+    </view>
+  </view> -->
+  
+</view>

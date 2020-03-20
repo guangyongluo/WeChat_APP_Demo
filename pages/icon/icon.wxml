@@ -1,0 +1,13 @@
+<!--pages/icon/icon.wxml-->
+<icon type="success" size="50"/>
+<icon type="info" size="80"/>
+<icon type="download" size="120" color="red"/>
+
+
+<view>
+  <text selectable="true" decode="true">文本&nbsp;组件</text>
+  <text space="nbsp">文本      组件</text>
+</view>
+
+
+

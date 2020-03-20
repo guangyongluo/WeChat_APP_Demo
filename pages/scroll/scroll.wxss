@@ -1,0 +1,9 @@
+/* pages/scroll/scroll.wxss */
+.view-item{
+    height: 250rpx;
+    width: 10000rpx;
+}
+
+.scroll-view{
+    height: 800rpx;
+}

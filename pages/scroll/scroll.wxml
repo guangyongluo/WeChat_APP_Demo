@@ -1,0 +1,12 @@
+<!--pages/scroll/scroll.wxml-->
+<text>pages/scroll/scroll.wxml</text>
+
+<scroll-view class='scroll-view' scroll-y="true" scroll-top="100"
+  enable-back-to-top='true'>
+  <view class="view-item" style='background-color: green'>1</view>
+  <view class="view-item" style='background-color: orange'>2</view>
+  <view class="view-item" style='background-color: pink'>3</view>
+  <view class="view-item" style='background-color: silver'>4</view>
+  <view class="view-item" style='background-color: blue'>5</view>
+  <view class="view-item" style='background-color: red'>6</view>
+</scroll-view>

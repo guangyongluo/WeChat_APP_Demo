@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/form/form",
+        "pages/button/button",
+        
+        "pages/icon/icon",
+
+        "pages/swiper/swiper",
+        "pages/scroll/scroll",
+        "pages/userInfo/userInfo",
+        
+        "pages/index/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "巡检任务",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#eee",
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/home.png",
+                "selectedIconPath": "images/home-selected.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "巡检查询",
+                "iconPath": "images/search.png",
+                "selectedIconPath": "images/search-selected.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

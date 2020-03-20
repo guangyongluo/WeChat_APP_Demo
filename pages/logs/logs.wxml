@@ -1,0 +1,49 @@
+<!--logs.wxml-->
+<!-- <view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view> -->
+
+<!-- <template name="userTemp">
+  <view>这里可能会重复很多遍</view>
+</template>
+
+<template is="userTemp"/>
+<template is="userTemp"/>
+<template is="userTemp"/>
+
+<template name="userABC">
+  <view>{{item.name}}</view>
+</template>
+
+<view wx:for="{{users}}" wx:key="userList">
+  <template is="userABC" data="{{item}}"/>
+</view>
+
+<import src="temp.wxml" />
+<template is="import" data="{{text : '载入'}}"/>
+
+<include src="header.wxml" /> -->
+
+<view style='display:flex;'>
+  <view class='v1'>1</view>
+  <view class='v2'>2</view>
+  <view class='v3'>3</view>
+</view>
+
+<view style='display:flex;'>
+  <view class='v1' style='height: 400rpx;'>1</view>
+  <view style='display: flex; flex-grow:2; flex-direction: column;'>
+    <view class='v2'>2</view>
+    <view class='v3'>3</view>
+  </view>
+</view>
+
+<view style='display: flex; flex-direction:column;'>
+  <view class="v1" style='height: 100rpx'>1</view>
+  <view style='display: flex;'>
+    <view class="v2">2</view>
+    <view class="v3">3</view>
+  </view>
+</view>

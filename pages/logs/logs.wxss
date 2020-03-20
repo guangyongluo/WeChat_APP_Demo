@@ -1,0 +1,27 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+/* @import "basic.wxss" */
+
+.v1{
+    background-color: maroon;
+    height: 200rpx;
+    flex-grow: 2;
+}
+.v2{
+    background-color: green;
+    height: 200rpx;
+    flex-grow: 1;
+}
+.v3{
+    background-color: orange;
+    height: 200rpx;
+    flex-grow: 1;
+}
+

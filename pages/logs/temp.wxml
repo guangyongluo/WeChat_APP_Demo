@@ -1,0 +1,4 @@
+<template name="import">
+  <view>import模板</view>
+  <view>{{text}}</view>
+</template>
