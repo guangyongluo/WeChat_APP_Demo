@@ -147,14 +147,17 @@ Page({
     year: date.getFullYear(),
     month: date.getMonth() + 1,
     day: date.getDate(),
-    value: [9999, 6, 15]
+    value: [9999, 6, 15],
+    dataTitle: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(date.getMonth());
+    this.setData({
+      dataTitle: options.title
+    })
   },
 
   /**

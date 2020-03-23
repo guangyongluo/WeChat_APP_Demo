@@ -1,0 +1,17 @@
+<!--pages/coach/coach.wxml-->
+<view class="h1">
+  私人教练
+</view>
+
+<!-- 一行一列 -->
+<view class="flex">
+  <view class="row">
+    <image src="/images/j1.jpg" mode="widthFix"/>
+  </view>
+  <view class="row">
+    <image src="/images/j2.jpg" mode="widthFix"/>
+  </view>
+  <view class="row">
+    <image src="/images/j3.jpg" mode="widthFix"/>
+  </view>
+</view>

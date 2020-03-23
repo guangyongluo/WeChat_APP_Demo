@@ -1,0 +1,24 @@
+/* pages/reserve/reserve.wxss */
+.h1{
+  font-weight: bold;
+  border-bottom: 1rpx dashed #ccc;
+  padding-bottom: 20rpx;
+  margin: 20rpx;
+}
+
+.flex{
+  /* 弹性盒子 */
+  display: flex;
+  /* 将盒子在必要的时候拆分多行 */
+  flex-wrap: wrap;
+}
+
+.row{
+  width: 710rpx;
+  margin: 20rpx;
+}
+
+.row image{
+  /* 强制图片100%显示 */
+  width: 100%;
+}

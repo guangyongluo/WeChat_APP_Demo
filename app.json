@@ -1,24 +1,28 @@
 {
     "pages": [
+        "pages/gym_index/gym_index",
+        "pages/coach/coach",
+        "pages/course/course",
+        "pages/site/site",
+        "pages/reserve/reserve",
+        "pages/image/image",
+        "pages/navigator/navigator",
         "pages/form/form",
         "pages/button/button",
-        
         "pages/icon/icon",
-
         "pages/swiper/swiper",
         "pages/scroll/scroll",
         "pages/userInfo/userInfo",
-        
         "pages/index/index",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/map/map"
     ],
     "window": {
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "巡检任务",
-        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#69008C",
+        "navigationBarTitleText": "高能健身馆",
+        "navigationBarTextStyle": "white",
         "backgroundColor": "#eee",
-        "backgroundTextStyle": "dark",
-        "enablePullDownRefresh": true
+        "backgroundTextStyle": "light"
     },
     "tabBar": {
         "list": [

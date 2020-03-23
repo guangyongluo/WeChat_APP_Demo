@@ -1,0 +1,23 @@
+<!--pages/reserve/reserve.wxml-->
+<view class="h1">
+  场地介绍
+</view>
+
+<!-- 一行两列 -->
+<view class="flex">
+  <view class="row">
+    <image src="/images/s1.jpg" mode="widthFix"/>
+  </view>
+  <view class="row">
+    <image src="/images/s2.jpg" mode="widthFix"/>
+  </view>
+  <view class="row">
+    <image src="/images/s3.jpg" mode="widthFix"/>
+  </view>
+  <view class="row">
+    <image src="/images/s4.jpg" mode="widthFix"/>
+  </view>
+  <view class="row">
+    <image src="/images/s5.jpg" mode="widthFix"/>
+  </view>
+</view>

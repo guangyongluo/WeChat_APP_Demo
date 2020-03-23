@@ -1,0 +1,44 @@
+<!--pages/gym_index/gym_index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for='{{imgUrls}}' wx:key="imgUrls">
+    <swiper-item>
+      <image class='slide-image' src='{{item}}'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 联系标题 -->
+<view class="h1">
+  高能健身馆
+</view>
+
+<!-- 联系文本 -->
+<view class="text">
+  <icon type='info' size="12" color="#666"/> 营业时间 9:00 - 21:00
+</view>
+<view class="text">
+  <icon type='search' size="12" color="#666"/> 上海市陆家嘴东方广场107号505室
+</view>
+
+<!-- 三组按钮 -->
+<view style="display : flex;">
+  <view class="row">
+    <navigator url="/pages/course/course">
+      <button size="mini" class="button">课程</button>
+    </navigator>
+  </view>
+  <view class="row">
+    <navigator url="/pages/coach/coach">
+      <button size="mini" class="button">教练</button>
+    </navigator>
+  </view>
+  <view class="row">
+    <navigator url="/pages/reserve/reserve">
+      <button size="mini" class="button">场地</button>
+    </navigator>
+  </view>
+</view>
+
+<!-- 地图 -->
+<map class="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}">
+</map>

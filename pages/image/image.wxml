@@ -1,0 +1,7 @@
+<image src="../../images/0.jpg"></image>
+
+<image src="../../images/0.jpg" mode="aspectFit"></image>
+
+<image src="../../images/0.jpg" mode="aspectFill"></image>
+
+<image src="../../images/0.jpg" mode="bottom left"></image>

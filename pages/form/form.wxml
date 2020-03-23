@@ -99,3 +99,5 @@
     </picker-view-column>
   </picker-view>
 </view>
+
+<view>{{dataTitle}}</view>

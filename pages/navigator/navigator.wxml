@@ -1,0 +1,9 @@
+<!--pages/navigator/navigator.wxml-->
+<navigator url='/pages/form/form' open-type="navigate">跳转</navigator>
+
+
+<!-- <navigator url='/pages/navigator/navigator' open-type="reLaunch">跳转</navigator> -->
+
+<!-- <navigator url='/pages/form/form' open-type="redirect">跳转</navigator> -->
+
+<navigator url='/pages/form/form?title=文本' open-type="redirect">跳转传参</navigator>
