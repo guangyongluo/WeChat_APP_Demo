@@ -1,3 +1,5 @@
+const util = require('../../utils/util.js');
+
 // pages/reserve/reserve.js
 Page({
 
@@ -5,7 +7,24 @@ Page({
    * 页面的初始数据
    */
   data: {
+    startDate: util.formatTime(new Date()),
+    endDate: '2030-12-31',
+    array: ['塑型', '减脂', '增肌'],
+    index: 0,
+    date: null
+  },
 
+  //健身意向选择
+  pickerChange : function(e){
+    this.setData({
+      index: e.detail.value
+    })
+  },
+
+  dateChange:function(e){
+    this.setData({
+      date: e.detail.value
+    });
   },
 
   /**

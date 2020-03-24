@@ -14,11 +14,22 @@
 }
 
 .row{
-  width: 710rpx;
+  /* 强制图片100%显示 */
+  width: 100%;
   margin: 20rpx;
 }
 
-.row image{
-  /* 强制图片100%显示 */
-  width: 100%;
+input{
+  width: 680rpx;
+  border: 1rpx solid #999;
+  margin: 10rpx 0;
+  padding: 15rpx;
+  color: #666;
+  border-radius: 8rpx;
+}
+
+.button{
+  width: 60%;
+  background-color: #300040;
+  color: white;
 }

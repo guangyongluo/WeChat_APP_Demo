@@ -1,23 +1,35 @@
 <!--pages/reserve/reserve.wxml-->
 <view class="h1">
-  场地介绍
+  健身预约
 </view>
 
 <!-- 一行两列 -->
 <view class="flex">
   <view class="row">
-    <image src="/images/s1.jpg" mode="widthFix"/>
+    姓名*：
+    <input type="text"></input>
   </view>
+
   <view class="row">
-    <image src="/images/s2.jpg" mode="widthFix"/>
+    电话*：
+    <input type="number"></input>
   </view>
+
   <view class="row">
-    <image src="/images/s3.jpg" mode="widthFix"/>
+    预约时间*：
+    <picker mode="date" value="{{startDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="dateChange">
+      <input type="text" disabled="true" value="{{date}}"></input>
+    </picker>  
   </view>
+
   <view class="row">
-    <image src="/images/s4.jpg" mode="widthFix"/>
+    健身意向*：
+    <picker mode='selector' range="{{array}}" value="{{index}}" bindchange="pickerChange">
+      <input class="text" disabled="true" value="{{array[index]}}"></input>
+    </picker>
   </view>
+
   <view class="row">
-    <image src="/images/s5.jpg" mode="widthFix"/>
+    <button class="button" type="button">预约</button>
   </view>
 </view>

@@ -33,7 +33,7 @@
     </navigator>
   </view>
   <view class="row">
-    <navigator url="/pages/reserve/reserve">
+    <navigator url="/pages/site/site">
       <button size="mini" class="button">场地</button>
     </navigator>
   </view>
