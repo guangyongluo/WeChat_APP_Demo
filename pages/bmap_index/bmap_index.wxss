@@ -1,0 +1,77 @@
+/* pages/bmap_index/bmap_index.wxss */
+
+page{
+  background-color: #666;
+}
+
+.whitecenter{
+  text-align: center;
+  color: white;
+}
+
+.myCity{
+  font-size: 40rpx;
+  margin: 40rpx 0 0 0;
+}
+
+.weather{
+  font-size: 120rpx;
+  margin: 20rpx;
+  padding: 60rpx 0 0 0;
+}
+
+.details{
+  font-size: 30rpx;
+  margin: 20rpx;
+}
+
+.weather_flex{
+  color: white;
+  background-color: #555;
+  display: flex;
+  padding: 20rpx;
+  margin: 40rpx 0 0 0;
+}
+
+.row{
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.row text{
+  display: block;
+  padding: 7rpx 0;
+}
+
+.tip_flex{
+  color: white;
+}
+
+.t_row{
+  margin: 30rpx;
+  display: flex;
+  border-bottom: 1rpx solid #555;
+}
+
+.t_left image{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.t_right{
+  margin-left: 12rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title{
+  font-size: 28rpx;
+  flex-grow: 1;
+}
+
+.content{
+  font-size: 24rpx;
+  flex-grow: 1;
+}
+

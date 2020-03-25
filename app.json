@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/bmap_index/bmap_index",
         "pages/gym_index/gym_index",
         "pages/coach/coach",
         "pages/course/course",
@@ -39,6 +40,11 @@
                 "selectedIconPath": "images/search-selected.png"
             }
         ]
+    },
+    "permission": {
+      "scope.userLocation" :{
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      }
     },
     "sitemapLocation": "sitemap.json"
 }

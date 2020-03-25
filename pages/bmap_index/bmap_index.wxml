@@ -1,0 +1,45 @@
+<!--城市-->
+<view class="page">
+
+  <view class="myCity whitecenter">
+    <picker mode="selector" range="{{cityList}}" value="北京市" bindchange="selectorChange">
+      <text>+{{myCity}}</text>
+    </picker>
+  </view>
+
+  <!--实时温度-->
+  <view class="weather whitecenter">
+    {{realTimeTemperature}}
+  </view>
+
+  <!--天气和PM2.5-->
+  <view class="details whitecenter">
+    {{myWeatherDesc}} {{myPM25Str}}
+  </view>
+
+  <!-- 四天的天气情况 -->
+  <view class="weather_flex">
+    <view wx:for='{{moreWeather}}' class="row" wx:key="moreWeather">
+      <text>{{item.date}}</text>
+      <text>{{item.temperature}}</text>
+      <text>{{item.weather}}</text>
+      <text>{{item.wind}}</text>
+    </view>
+  </view>
+
+  <!-- 五条生活小贴士 -->
+  <view class="tip_flex">
+    <view class="t_row" wx:for="{{tips}}" wx:key="tips">
+      <view class="t_left">
+        <image src="/images/w{{index}}.png" mode="widthFix"/>
+      </view>
+      <view class="t_right">
+        <view class="title">{{item.tipt}} {{item.zs}}</view>
+        <view class="content">{{item.des}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
