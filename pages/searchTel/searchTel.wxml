@@ -1,0 +1,29 @@
+<!--pages/searchTel/searchTel.wxml-->
+<view class="tel">
+  <view class="input">
+    <input type="number" placeholder="请输入查询的手机号" bindinput="input"></input>
+  </view>
+
+  <view class="button">
+    <button bindtap="searchNum">查询</button>
+  </view>
+
+  <view class="info">
+    <text>温馨提示：查询结果仅供参考，以当地营业厅查询结果为准</text>
+  </view>
+
+  <view class="result_caption">
+    <text>{{res_code}}</text>
+  </view>
+
+  <view class="result" hidden="{{hide}}">
+    <view class="row bg">所查号码</view>
+    <view class="row bg">{{number}}</view>
+    <view class="row">归属省</view>
+    <view class="row">{{prov}}</view>
+    <view class="row bg">归属地区</view>
+    <view class="row bg">{{city}}</view>
+    <view class="row">运营商</view>
+    <view class="row">{{operator}}</view>
+  </view>
+</view>

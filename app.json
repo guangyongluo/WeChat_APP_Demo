@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/searchTel/searchTel",
         "pages/bmap_index/bmap_index",
         "pages/gym_index/gym_index",
         "pages/coach/coach",

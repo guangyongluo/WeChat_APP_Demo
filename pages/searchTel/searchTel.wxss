@@ -1,0 +1,51 @@
+/* pages/searchTel/searchTel.wxss */
+.tel{
+  width: 70%;
+  margin: 0 auto;
+  font-size: 30rpx;
+}
+
+.tel view{
+  margin: 15rpx 0;
+}
+
+.input input{
+  border: 1rpx solid #eee;
+  background-color: #eee;
+  padding: 18rpx;
+  border-radius: 8rpx;
+  color: #666;
+}
+
+.button button{
+  background-color: #0080ff;
+  color: white;
+}
+
+.info text{
+  color: #999;
+  font-size: 24rpx;
+}
+
+.result_caption text{
+  color: #0080ff;
+}
+
+.result{
+  display: flex;
+  flex-wrap: wrap;
+  color: #666;
+  border: 1rpx solid #999;
+}
+
+.result .row{
+  flex-basis: 50%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10rpx;
+}
+
+.result .bg{
+  background-color: #eee;
+}
+
