@@ -6,7 +6,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    console.log('小程序初始化完成！');
+    // console.log('小程序初始化完成！');
 
     // 登录
     wx.login({

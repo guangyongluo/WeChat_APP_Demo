@@ -3,14 +3,14 @@
 const app = getApp()
 
 var obj = require('../../utils/util.js');
-console.log(obj.formatTime());
+// console.log(obj.formatTime());
 
 var appData = getApp();
-console.log(appData.globalData.msg);
-console.log(appData.globalFunction());
+// console.log(appData.globalData.msg);
+// console.log(appData.globalFunction());
 
-console.log(app.globalData.msg);
-console.log(app.globalFunction());
+// console.log(app.globalData.msg);
+// console.log(app.globalFunction());
 
 Page({
   data: {

@@ -1,0 +1,16 @@
+<!--pages/today/today.wxml-->
+<view class="flex">
+  <view class='row' wx:for="{{list}}" wx:key="list">
+    <navigator url="/pages/details/details?title={{item.title}}&year={{item.year}}&month={{item.month}}&day={{item.day}}&img={{item.img}}">
+      <text>{{item.year}} {{item.title}}</text>
+    </navigator>
+  </view>
+</view>
+
+<view class="search">
+  <picker mode="date" value="{{day}}" start='2020-01-01' end='2020-12-31' bindchange="dateChange">
+    <view class="picker">
+      日期选择：{{changeDate}}
+    </view>
+  </picker>
+</view>

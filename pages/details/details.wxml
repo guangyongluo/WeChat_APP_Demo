@@ -1,0 +1,12 @@
+<!--pages/details/details.wxml-->
+<view class="title">
+  <text>{{title}}</text>
+</view>
+
+<view class="day">
+  <text>时间 ： {{year}}年/{{month}}月/{{day}}日</text>
+</view>
+
+<view class="img">
+  <image src="{{img}}" mode='widthFix'></image>
+</view>

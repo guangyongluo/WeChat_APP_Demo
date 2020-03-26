@@ -1,0 +1,35 @@
+/* pages/today/today.wxss */
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70rpx;
+}
+
+.row{
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  padding: 8rpx 0;
+  margin: 10rpx;
+  font-size: 28rpx;
+  color: #555;
+
+  /*多余内容隐藏*/
+  overflow:hidden;
+  /*区块模式*/
+  display: -webkit-box;
+  /*只显示一行*/
+  -webkit-line-clamp: 1;
+  /*隐藏的用省略号代替*/
+  -webkit-box-orient: vertical;
+}
+
+.search{
+  text-align: center;
+  color: #666;
+  width: 100%;
+  background-color: #ccc;
+  font-size: 28rpx;
+  padding: 20rpx;
+  position: fixed;
+  bottom: 0;
+}
