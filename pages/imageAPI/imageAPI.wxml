@@ -1,0 +1,46 @@
+<!--pages/imageAPI/imageAPI.wxml-->
+<view>
+  <button bindtap="selectImg">从相册或拍照获取</button>
+</view>
+
+<view>
+  <button bindtap="operateImg">操作图片</button>
+</view>
+
+<view>
+  <button bindtap="getImgInfo">获取图片信息</button>
+</view>
+
+<view>
+  <button bindtap="loadImg">加载图片</button>
+</view>
+
+<view>
+  <button bindtap="compressImg">压缩图片</button>
+</view>
+
+<view>
+  <button bindtap="operateCompressImg">操作压缩图片</button>
+</view>
+
+<view>
+  <button bindtap="saveImg">保存压缩图片</button>
+</view>
+
+<view>
+  <button bindtap="uploadImg">上传图片</button>
+</view>
+
+<view>
+  <button bindtap="downloadImg">下载图片</button>
+</view>
+
+<view wx:for="{{imgs}}" wx:key="imgs">
+  <image src="{{item}}"></image>
+</view>
+
+<view wx:for="{{paths}}" wx:key="paths">
+  <image src="{{item.path}}"></image>
+</view>
+
+

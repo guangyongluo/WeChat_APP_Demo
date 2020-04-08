@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/imageAPI/imageAPI",
         "pages/today/today",
         "pages/details/details",
         "pages/searchTel/searchTel",
