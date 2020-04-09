@@ -1,0 +1,4 @@
+<!--pages/photo_index/photo_index.wxml-->
+<view class="button">
+  <button bindtap="gotoAlbum">进入相册</button>
+</view>

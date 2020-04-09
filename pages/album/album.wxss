@@ -1,0 +1,56 @@
+/* pages/album/album.wxss */
+.up-button, .op-button{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  justify-content: center;
+  color: #666;
+  border: 1rpx solid #eee;
+  border-radius: 8rpx;
+  display: flex;
+}
+
+.op-button view{
+  flex-grow: 1;
+}
+
+.op-button view.loading{
+  flex-grow: 2;
+}
+
+.imageList{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 7rpx;
+  margin-bottom: 100rpx;
+}
+
+.imageList view{
+  position: relative;
+}
+
+.imageList image{
+  width: 232rpx;
+  height: 232rpx;
+  padding: 7rpx;
+}
+
+.imageList image.selected{
+  filter: brightness(40%);
+}
+
+.imageList icon{
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  display: none;
+}
+
+.imageList icon.selected{
+  display: block;
+}

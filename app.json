@@ -1,5 +1,7 @@
 {
     "pages": [
+        "pages/photo_index/photo_index",
+        "pages/album/album",
         "pages/imageAPI/imageAPI",
         "pages/today/today",
         "pages/details/details",

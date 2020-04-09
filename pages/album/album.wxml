@@ -1,0 +1,23 @@
+<!--pages/album/album.wxml-->
+<view class='up-button' bindtap="upImage" style="display: {{showButton == false ? 'flex' : 'none' }}">上传图片</view>
+
+
+<view class="op-button" style="display: {{showButton == true ? 'flex' : 'none' }}">
+  <view class="loading">已选定{{selectedIndex.length}}张图片</view>
+  <view class="operate" bindtap="showActions">操作</view>
+  <view class="cancel" bindtap="hideActions">取消</view>
+</view>
+
+<!-- 图片列表 -->
+<view class='imageList'>
+  <view wx:for='{{imageList}}' wx:key='imageList'>
+    <image src="{{item}}" bindtap="previewImage" bindlongpress="selectImage" data-src='{{item}}' data-index='{{index}}' mode="aspectFill" class="{{m1.m(selectedIndex, index) != -1 ? 'selected' : ''}}"></image><icon type="success" size="25" class="{{m1.m(selectedIndex, index) != -1 ? 'selected' : ''}}"></icon>
+
+    <wxs module='m1'>
+      var m = function(selectedIndex, index){
+        return selectedIndex.indexOf(index);
+      }
+      module.exports.m = m;
+    </wxs>
+  </view>
+</view>
